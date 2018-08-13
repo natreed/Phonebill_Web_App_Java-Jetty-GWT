@@ -10,6 +10,7 @@ import edu.pdx.cs410J.natreed.client.PhoneBillService;
  */
 public class PhoneBillServiceImpl extends RemoteServiceServlet implements PhoneBillService
 {
+  //add phonecall to phonebill, pretty print, search
   @Override
   public PhoneBill getPhoneBill() {
     PhoneBill phonebill = new PhoneBill();
