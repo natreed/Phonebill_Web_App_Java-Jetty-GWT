@@ -1,7 +1,7 @@
 package edu.pdx.cs410J.natreed;
 
 import com.gdevelop.gwt.syncrpc.SyncProxy;
-import edu.pdx.cs410J.natreed.server.PhoneBill;
+import edu.pdx.cs410J.natreed.client.PhoneBill;
 import edu.pdx.cs410J.natreed.client.PhoneBillService;
 import edu.pdx.cs410J.web.HttpRequestHelper;
 import org.junit.Test;

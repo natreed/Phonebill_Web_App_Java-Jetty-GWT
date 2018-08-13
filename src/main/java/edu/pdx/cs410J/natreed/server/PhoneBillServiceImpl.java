@@ -1,7 +1,9 @@
 package edu.pdx.cs410J.natreed.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+import edu.pdx.cs410J.natreed.client.PhoneBill;
 import edu.pdx.cs410J.natreed.client.PhoneBillService;
+import edu.pdx.cs410J.natreed.client.PhoneCall;
 
 import java.util.HashMap;
 import java.util.Map;

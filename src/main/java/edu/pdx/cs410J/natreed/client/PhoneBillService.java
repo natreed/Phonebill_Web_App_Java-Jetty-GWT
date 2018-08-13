@@ -2,8 +2,6 @@ package edu.pdx.cs410J.natreed.client;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
-import edu.pdx.cs410J.natreed.server.PhoneBill;
-import edu.pdx.cs410J.natreed.server.PhoneCall;
 
 /**
  * A GWT remote service that returns a dummy Phone Bill

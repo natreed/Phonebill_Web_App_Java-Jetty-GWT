@@ -2,6 +2,7 @@ package edu.pdx.cs410J.natreed.server;
 
 import edu.pdx.cs410J.AbstractPhoneBill;
 import edu.pdx.cs410J.PhoneBillDumper;
+import edu.pdx.cs410J.natreed.client.PhoneBill;
 
 import java.io.BufferedWriter;
 import java.io.File;

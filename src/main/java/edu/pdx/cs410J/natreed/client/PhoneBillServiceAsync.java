@@ -1,8 +1,6 @@
 package edu.pdx.cs410J.natreed.client;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import edu.pdx.cs410J.natreed.server.PhoneBill;
-import edu.pdx.cs410J.natreed.server.PhoneCall;
 
 /**
  * The client-side interface to the phone bill service

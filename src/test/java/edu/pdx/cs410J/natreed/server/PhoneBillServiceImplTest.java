@@ -1,5 +1,8 @@
 package edu.pdx.cs410J.natreed.server;
 
+import edu.pdx.cs410J.natreed.client.DateAndTime;
+import edu.pdx.cs410J.natreed.client.PhoneBill;
+import edu.pdx.cs410J.natreed.client.PhoneCall;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
