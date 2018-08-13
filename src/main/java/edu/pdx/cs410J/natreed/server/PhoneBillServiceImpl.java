@@ -1,21 +1,64 @@
 package edu.pdx.cs410J.natreed.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import edu.pdx.cs410J.natreed.client.PhoneBill;
-import edu.pdx.cs410J.natreed.client.PhoneCall;
 import edu.pdx.cs410J.natreed.client.PhoneBillService;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * The server-side implementation of the Phone Bill service
  */
 public class PhoneBillServiceImpl extends RemoteServiceServlet implements PhoneBillService
 {
-  //add phonecall to phonebill, pretty print, search
+  static final String CUSTOMER_PARAMETER = "customer";
+  private static final String CALLER_PARAMETER = "caller";
+  private static final String CALLEE_PARAMETER = "callee";
+  private static final String START_TIME_PARAMETER = "startTime";
+  private static final String END_TIME_PARAMETER = "endTime";
+
+
+  private final Map<String, PhoneBill> PhoneBillDataBase = new HashMap<>();
+
   @Override
   public PhoneBill getPhoneBill() {
     PhoneBill phonebill = new PhoneBill();
     phonebill.addPhoneCall(new PhoneCall());
     return phonebill;
+  }
+
+  /**
+   * Gets phone bill by customer name.
+   * @param customer
+   * @return
+   */
+  public PhoneBill getPhoneBillFor(String customer) {
+    return this.PhoneBillDataBase.get(customer);
+  }
+
+  /**
+   *
+   * @param phoneBill
+   */
+  public void addPhoneBill(PhoneBill phoneBill) {
+    this.PhoneBillDataBase.put(phoneBill.getCustomer(), phoneBill);
+  }
+
+  /**
+   *
+   * @param customer
+   * @param phoneCall
+   */
+  public void  addPhoneCall (String customer, PhoneCall phoneCall) {
+    PhoneBill phoneBill = getPhoneBillFor(customer);
+    if (phoneBill == null) {
+      phoneBill = new PhoneBill(customer);
+      addPhoneBill(phoneBill);
+    }
+
+    phoneBill.addPhoneCall(phoneCall);
+
+    this.PhoneBillDataBase.put(customer, phoneBill);
   }
 
   @Override

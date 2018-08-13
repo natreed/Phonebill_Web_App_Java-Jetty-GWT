@@ -10,6 +10,8 @@ import com.google.gwt.event.shared.UmbrellaException;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.*;
+import edu.pdx.cs410J.natreed.server.PhoneBill;
+import edu.pdx.cs410J.natreed.server.PhoneCall;
 
 import java.util.Collection;
 import java.util.logging.Level;
@@ -183,9 +185,9 @@ public class PhoneBillGwt implements EntryPoint {
     });
   }
 
-  private void showPhoneBill() {
+  private void showPhoneBill(String name) {
     logger.info("Calling getPhoneBill");
-    phoneBillService.getPhoneBill(new AsyncCallback<PhoneBill>() {
+    phoneBillService.getPhoneBillFor(name, new AsyncCallback<PhoneBill>() {
 
       @Override
       public void onFailure(Throwable ex) {
@@ -245,7 +247,7 @@ public class PhoneBillGwt implements EntryPoint {
     TextBox startTimeBox = new TextBox();
     Label endTimeLabel = new Label("End Time:");
     TextBox endTimeBox = new TextBox();
-    Button button = new Button("Submit");
+    Button submitButton = new Button("Submit");
 
     Grid grid = new Grid(7, 2);
 
@@ -261,35 +263,48 @@ public class PhoneBillGwt implements EntryPoint {
     grid.setWidget(4, 1, startTimeBox);
     grid.setWidget(5, 0, endTimeLabel);
     grid.setWidget(5, 1, endTimeBox);
-    grid.setWidget(6, 1, button);
+    grid.setWidget(6, 1, submitButton);
 
 
     RootPanel.get().add(grid);
 
-    optionBox.addClickListener(new ClickListener() {
+
+    submitButton.addClickHandler(new ClickHandler() {
       @Override
-      public void onClick(Widget widget) {
-        String text = optionBox.getSelectedItemText();
-        if (text == "Print Phonebill") {
-
-        }
-        else if (text == "Add Phonecall") {
-
-        }
-        else if (text == "Search Phonecalls") {
-
-        }
-        else if (text == "Help") {
-
-        }
-        else if (text == "Readme") {
-
-        }
-        else if (text == "Create Phonebill") {
+      public void onClick(ClickEvent clickEvent) {
+        if (optionBox.getSelectedItemText() == "Print Phonebill") {
 
         }
       }
     });
+
+
+//    optionBox.addClickListener(new ClickListener() {
+//
+//
+//
+//      public void onClick(Widget widget) {
+//        String text = optionBox.getSelectedItemText();
+//        if (text == "Print Phonebill") {
+//
+//        }
+//        else if (text == "Add Phonecall") {
+//
+//        }
+//        else if (text == "Search Phonecalls") {
+//
+//        }
+//        else if (text == "Help") {
+//
+//        }
+//        else if (text == "Readme") {
+//
+//        }
+//        else if (text == "Create Phonebill") {
+//
+//        }
+//      }
+//    });
 
   }
 

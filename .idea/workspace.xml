@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11727df1-2ff2-4818-94a6-a8d49ba47190" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/CallData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneCall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebill-gwt.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/java/edu/pdx/cs410J/natreed/PhoneBillServiceSyncProxyIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/java/edu/pdx/cs410J/natreed/PhoneBillServiceSyncProxyIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneCall.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillGwt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/client/PhoneCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/phonebill/WEB-INF/classes/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,72 +40,126 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PhoneBill.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneCall.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneCall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneBillGwt.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-166">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <element signature="e#3580#3581#0" expanded="true" />
-                <element signature="e#3611#3612#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneBillServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneBillService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneBillServiceAsync.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6230032">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="PhoneBillGwt.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="399">
+                  <caret line="201" column="26" lean-forward="true" selection-start-line="201" selection-start-column="26" selection-end-line="201" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#5860#5861#0" expanded="true" />
+                    <element signature="e#5898#5899#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhoneBillServiceImplTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImplTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhoneBillServiceAsync.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhoneBillService.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhoneBill.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Messages.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/Messages.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="DateAndTime.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/DateAndTime.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-137">
+                  <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhoneCall.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneCall.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhoneBillServiceImpl.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="810">
+                  <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#1013#1014#0" expanded="true" />
+                    <element signature="e#1066#1067#0" expanded="true" />
+                    <element signature="e#1190#1191#0" expanded="true" />
+                    <element signature="e#1262#1263#0" expanded="true" />
+                    <element signature="e#1615#1616#0" expanded="true" />
+                    <element signature="e#1689#1690#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>button</find>
       <find>getPhon</find>
       <find>addwidgets</find>
+      <find>async</find>
+      <find>showP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,8 +169,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/CallData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/Messages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/DateAndTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneCall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneCall.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -109,10 +192,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-47" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
+    <option name="width" value="1304" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -180,6 +263,27 @@
               <item name="natreed" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="phonebill-gwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phonebill-gwt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phonebill-gwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phonebill-gwt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phonebill-gwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phonebill-gwt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -194,6 +298,17 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.pdx.cs410J.natreed.server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -206,13 +321,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GWT Configuration.PhoneBillGwt">
+  <component name="RunManager" selected="JUnit.PhoneBillServiceImplTest.serviceReturnsExpectedPhoneBill">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="PhoneBillGwt" type="GWT.ConfigurationType" factoryName="GWT Configuration" temporary="true">
       <option name="RUN_PAGE" value="PhoneBillGwt.html" />
       <module name="phonebill-gwt" />
+    </configuration>
+    <configuration name="PhoneBillServiceImplTest.serviceReturnsExpectedPhoneBill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phonebill-gwt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.pdx.cs410J.natreed.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.pdx.cs410J.natreed.server" />
+      <option name="MAIN_CLASS_NAME" value="edu.pdx.cs410J.natreed.server.PhoneBillServiceImplTest" />
+      <option name="METHOD_NAME" value="serviceReturnsExpectedPhoneBill" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -266,9 +404,11 @@
     <list>
       <item itemvalue="Remote.GWT Dev Mode" />
       <item itemvalue="GWT Configuration.PhoneBillGwt" />
+      <item itemvalue="JUnit.PhoneBillServiceImplTest.serviceReturnsExpectedPhoneBill" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBillServiceImplTest.serviceReturnsExpectedPhoneBill" />
         <item itemvalue="GWT Configuration.PhoneBillGwt" />
       </list>
     </recent_temporary>
@@ -286,15 +426,16 @@
       <workItem from="1533785690106" duration="85000" />
       <workItem from="1533786374045" duration="888000" />
       <workItem from="1533944342527" duration="15234000" />
-      <workItem from="1534175184291" duration="1504000" />
+      <workItem from="1534175184291" duration="10485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17711000" />
+    <option name="totallyTimeSpent" value="26692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-47" y="23" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -308,15 +449,15 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40625" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32916668" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.3283582" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32916668" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2912673" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31442785" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19808307" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -341,14 +482,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneCall.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneCall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
@@ -381,13 +522,13 @@
         <state relative-caret-position="3945">
           <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
           <folding>
-            <element signature="e#3580#3581#0" expanded="true" />
-            <element signature="e#3611#3612#0" expanded="true" />
+            <element signature="e#5860#5861#0" expanded="true" />
+            <element signature="e#5898#5899#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -401,7 +542,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -412,41 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -457,13 +563,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/NoSuchPhoneBillException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/CallData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PrettyPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/CmdLnParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/DateAndTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="399">
+          <caret line="201" column="26" lean-forward="true" selection-start-line="201" selection-start-column="26" selection-end-line="201" selection-end-column="26" />
           <folding>
-            <element signature="e#3580#3581#0" expanded="true" />
-            <element signature="e#3611#3612#0" expanded="true" />
+            <element signature="e#5860#5861#0" expanded="true" />
+            <element signature="e#5898#5899#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
