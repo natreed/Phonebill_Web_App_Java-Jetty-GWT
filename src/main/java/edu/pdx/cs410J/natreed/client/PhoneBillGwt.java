@@ -147,9 +147,6 @@ public class PhoneBillGwt implements EntryPoint {
     RootPanel.get().add(form);
   }
 
-
-
-
   private void throwClientSideException() {
     logger.info("About to throw a client-side exception");
     throw new IllegalStateException("Expected exception on the client side");

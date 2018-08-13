@@ -1,6 +1,11 @@
-/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/client/PhoneCall.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/CmdLnParser.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/DateAndTime.java
 /Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillServiceAsync.java
-/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBill.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/PhoneCall.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/CallData.java
 /Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillService.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/Messages.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/PrettyPrinter.java
 /Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBillServiceImpl.java
+/Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/server/PhoneBill.java
 /Users/nathanreed/Desktop/java/phonebill-gwt/src/main/java/edu/pdx/cs410J/natreed/client/PhoneBillGwt.java

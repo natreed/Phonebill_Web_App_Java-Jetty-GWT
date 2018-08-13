@@ -3,6 +3,7 @@ package edu.pdx.cs410J.natreed.client;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import edu.pdx.cs410J.natreed.server.PhoneBill;
+import edu.pdx.cs410J.natreed.server.PhoneCall;
 
 /**
  * A GWT remote service that returns a dummy Phone Bill
@@ -24,6 +25,11 @@ public interface PhoneBillService extends RemoteService {
    *
    */
   void addPhoneBill(PhoneBill phoneBill);
+
+  /**
+   *
+   */
+  void  addPhoneCall (String customer, PhoneCall phoneCall);
 
   /**
    * Always throws an undeclared exception so that we can see GWT handles it.

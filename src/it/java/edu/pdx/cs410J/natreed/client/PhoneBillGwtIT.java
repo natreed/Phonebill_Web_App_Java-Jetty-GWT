@@ -31,7 +31,7 @@ public class PhoneBillGwtIT extends GWTTestCase {
     waitBeforeRunning(500, new Runnable() {
       @Override
       public void run() {
-        click(ui.showPhoneBillButton);
+//        click(ui.showPhoneBillButton);
       }
     });
 
