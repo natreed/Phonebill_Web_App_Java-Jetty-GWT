@@ -27,6 +27,11 @@ public interface PhoneBillService extends RemoteService {
   /**
    *
    */
+  String printBill(String name);
+
+  /**
+   *
+   */
   void  addPhoneCall (String customer, PhoneCall phoneCall);
 
   /**

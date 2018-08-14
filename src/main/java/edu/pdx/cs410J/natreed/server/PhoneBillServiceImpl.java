@@ -1,10 +1,14 @@
 package edu.pdx.cs410J.natreed.server;
 
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import edu.pdx.cs410J.natreed.client.PhoneBill;
 import edu.pdx.cs410J.natreed.client.PhoneBillService;
 import edu.pdx.cs410J.natreed.client.PhoneCall;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,12 +59,29 @@ public class PhoneBillServiceImpl extends RemoteServiceServlet implements PhoneB
     PhoneBill phoneBill = getPhoneBillFor(customer);
     if (phoneBill == null) {
       phoneBill = new PhoneBill(customer);
+      phoneBill.addPhoneCall(phoneCall);
       addPhoneBill(phoneBill);
     }
+    else {
+      phoneBill.addPhoneCall(phoneCall);
+    }
 
-    phoneBill.addPhoneCall(phoneCall);
+  }
 
-    this.PhoneBillDataBase.put(customer, phoneBill);
+  /**
+   *
+   * @param customer
+   * @return
+   */
+  public String printBill (String customer) {
+    PhoneBill phoneBill = getPhoneBillFor(customer);
+    if (phoneBill == null) {
+      throw new RuntimeException("No call records exist for " + customer + ". If you would like" +
+              " to create a new phone bill choose add call and enter the call information.");
+    }
+    else {
+        return phoneBill.getPrettyString();
+    }
   }
 
   @Override
@@ -84,5 +105,7 @@ public class PhoneBillServiceImpl extends RemoteServiceServlet implements PhoneB
     unhandled.printStackTrace(System.err);
     super.doUnexpectedFailure(unhandled);
   }
+
+
 
 }

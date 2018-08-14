@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall>{
-  public PhoneCall () {}
+
 
   private String callerNumber;
   private String calleeNumber;
@@ -14,18 +14,17 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
   private Date endTime;
   private String duration;
 
+  public PhoneCall() {}
 
-  public PhoneCall(String _callerNumber, String _calleeNumber, DateAndTime _startTime, DateAndTime _endTime) {
-
+  public PhoneCall(String _callerNumber, String _calleeNumber, Date _startTime, Date _endTime) {
     callerNumber = _callerNumber;
     calleeNumber = _calleeNumber;
-    startTime = _startTime.toDate();
-    endTime = _endTime.toDate();
+    startTime = _startTime;
+    endTime = _endTime;
     setCallDuration();
-
   }
 
-    @Override
+  @Override
   public String getCaller() {
     return callerNumber;
   }
@@ -37,20 +36,13 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
 
   @Override
   public String getStartTimeString() {
-    return getDateString(DateAndTime.convertDateToDateAndTime(startTime).date, DateAndTime.convertDateToDateAndTime(startTime).time);
+    return DateAndTime.dateToString(startTime);
   }
 
   @Override
   public String getEndTimeString()  {
-    return getDateString(DateAndTime.convertDateToDateAndTime(endTime).date, DateAndTime.convertDateToDateAndTime(endTime).time);
+    return DateAndTime.dateToString(endTime);
   }
-
-  private String getDateString (String _date, String _time) {
-    String DateString = _date + " " + _time;
-    return DateString;
-  }
-
-
 
   public String getDuration () {
     return duration;
@@ -63,14 +55,25 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
    */
   @Override
   public int compareTo(PhoneCall o) {
-    Date aDate = null;
-    Date bDate = null;
-
-    aDate = DateAndTime.StringToDate(o.getStartTimeString());
-    bDate = DateAndTime.StringToDate(o.getEndTimeString());
+    Date aDate = DateAndTime.StringToDate(this.getStartTimeString());
+    Date bDate = DateAndTime.StringToDate(o.getStartTimeString());
 
     int val = aDate.compareTo(bDate);
-    return val;
+
+    if (val == 0) {
+      int callerNumberCmp = this.getCaller().compareTo(this.getCaller());
+      if (callerNumberCmp == 0) {
+        return 0;
+      }
+      else if (callerNumberCmp > 0) {
+        return 1;
+      }
+      return -1;
+    }
+    else if (val > 0) {
+      return 1;
+    }
+    else return -1;
   }
 
   /**
@@ -93,4 +96,6 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
 
     this.duration = duration  + " minutes";
   }
+
+
 }

@@ -112,8 +112,6 @@ public class PhoneBill extends AbstractPhoneBill<PhoneCall> {
         return phoneBill;
     }
 
-
-
     @Override
     public String getCustomer() {
         return this.customer;

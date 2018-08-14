@@ -12,7 +12,8 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.*;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -82,70 +83,6 @@ public class PhoneBillGwt implements EntryPoint {
   }
 
 
-  private void addWidgets(FormPanel form) {
-    // Create a FormPanel and point it at a service.
-
-    form.setAction("/myFormHandler");
-
-    // Because we're going to add a FileUpload widget, we'll need to set the
-    // form to use the POST method, and multipart MIME encoding.
-    form.setEncoding(FormPanel.ENCODING_MULTIPART);
-    form.setMethod(FormPanel.METHOD_POST);
-
-    // Create a panel to hold all of the form widgets.
-    VerticalPanel panel = new VerticalPanel();
-    form.setWidget(panel);
-
-    // Create a TextBox, giving it a name so that it will be submitted.
-    final TextBox tb = new TextBox();
-    tb.setName("textBoxFormElement");
-    panel.add(tb);
-
-    // Create a ListBox, giving it a name and some values to be associated with
-    // its options.
-    ListBox lb = new ListBox();
-    lb.setName("listBoxFormElement");
-    lb.addItem("foo", "fooValue");
-    lb.addItem("bar", "barValue");
-    lb.addItem("baz", "bazValue");
-    panel.add(lb);
-
-    // Create a FileUpload widget.
-    FileUpload upload = new FileUpload();
-    upload.setName("uploadFormElement");
-    panel.add(upload);
-
-    // Add a 'submit' button.
-    panel.add(new Button("Submit", new ClickHandler() {
-      public void onClick(ClickEvent event) {
-        form.submit();
-      }
-    }));
-
-    // Add an event handler to the form.
-    form.addSubmitHandler(new FormPanel.SubmitHandler() {
-      public void onSubmit(FormPanel.SubmitEvent event) {
-        // This event is fired just before the form is submitted. We can take
-        // this opportunity to perform validation.
-        if (tb.getText().length() == 0) {
-          Window.alert("The text box must not be empty");
-          event.cancel();
-        }
-      }
-    });
-    form.addSubmitCompleteHandler(new FormPanel.SubmitCompleteHandler() {
-      public void onSubmitComplete(FormPanel.SubmitCompleteEvent event) {
-        // When the form submission is successfully completed, this event is
-        // fired. Assuming the service returned a response of type text/html,
-        // we can get the result text here (see the FormPanel documentation for
-        // further explanation).
-        Window.alert(event.getResults());
-      }
-    });
-
-    RootPanel.get().add(form);
-  }
-
   private void throwClientSideException() {
     logger.info("About to throw a client-side exception");
     throw new IllegalStateException("Expected exception on the client side");
@@ -181,27 +118,7 @@ public class PhoneBillGwt implements EntryPoint {
     });
   }
 
-  private void showPhoneBill(String name) {
-    logger.info("Calling getPhoneBill");
-    phoneBillService.getPhoneBillFor(name, new AsyncCallback<PhoneBill>() {
 
-      @Override
-      public void onFailure(Throwable ex) {
-        alertOnException(ex);
-      }
-
-      @Override
-      public void onSuccess(PhoneBill phoneBill) {
-        StringBuilder sb = new StringBuilder(phoneBill.toString());
-        Collection<PhoneCall> calls = phoneBill.getPhoneCalls();
-        for (PhoneCall call : calls) {
-          sb.append(call);
-          sb.append("\n");
-        }
-        alerter.alert(sb.toString());
-      }
-    });
-  }
   
   @Override
   public void onModuleLoad() {
@@ -227,7 +144,6 @@ public class PhoneBillGwt implements EntryPoint {
     Label optionLabel = new Label("Choose an Option");
     ListBox optionBox = new ListBox();
     optionBox.addItem("Print Phonebill");
-    optionBox.addItem("Create Phonebill");
     optionBox.addItem("Add Phonecall");
     optionBox.addItem("Search Phonecalls");
     optionBox.addItem("Help");
@@ -265,42 +181,101 @@ public class PhoneBillGwt implements EntryPoint {
     RootPanel.get().add(grid);
 
 
+
+    //indexes for select options
+    //    0("Print Phonebill");
+    //    1("Add Phonecall");
+    //    2("Search Phonecalls");
+    //    3("Help");
+    //    4("Readme");
+
+
+    nameBox.setText("bill");
+    calleeBox.setText("333-333-3333");
+    callerBox.setText("444-444-4444");
+    startTimeBox.setText("12/03/2013 8:00 am");
+    endTimeBox.setText(("12/03/2013 8:01 am"));
+
     submitButton.addClickHandler(new ClickHandler() {
       @Override
       public void onClick(ClickEvent clickEvent) {
-        if (optionBox.getSelectedItemText() == "Print Phonebill") {
+        int op = optionBox.getSelectedIndex();
+        String name = nameBox.getText();
+        String caller = callerBox.getText();
+        String callee = calleeBox.getText();
+        String startTime = startTimeBox.getText();
+        String endTime  = endTimeBox.getText();
 
-        }
+        submitHandler (op, name, caller, callee, startTime, endTime);
       }
     });
 
+  }
 
-//    optionBox.addClickListener(new ClickListener() {
-//
-//
-//
-//      public void onClick(Widget widget) {
-//        String text = optionBox.getSelectedItemText();
-//        if (text == "Print Phonebill") {
-//
-//        }
-//        else if (text == "Add Phonecall") {
-//
-//        }
-//        else if (text == "Search Phonecalls") {
-//
-//        }
-//        else if (text == "Help") {
-//
-//        }
-//        else if (text == "Readme") {
-//
-//        }
-//        else if (text == "Create Phonebill") {
-//
-//        }
-//      }
-//    });
+  private void submitHandler (int op, String name, String caller,
+                              String callee, String startTime, String endTime) {
+    if (op == 0) {
+      getPrettyPhoneBill(name);
+    }
+    else if (op == 1) {
+      Parser.callerCalleeCheck(caller, callee);
+      PhoneCall phoneCall = new PhoneCall(caller, callee,
+              DateAndTime.StringToDate(startTime),
+              DateAndTime.StringToDate(endTime));
+      addPhoneCall(name, phoneCall);
+    }
+    else if (op == 2) {
+      Date start = DateAndTime.StringToDate(startTime);
+      Date end = DateAndTime.StringToDate(endTime);
+      searchCalls(name, start, end);
+    }
+  }
+
+  public void addPhoneCall(String customerName, PhoneCall call)  {
+    phoneBillService.addPhoneCall(customerName, call, new AsyncCallback() {
+      @Override
+      public void onFailure(Throwable ex) {
+        alertOnException(ex);
+      }
+
+      @Override
+      public void onSuccess(Object o) {
+        StringBuilder sb = new StringBuilder("Phonecall added for " + customerName + "\n" + call.toString());
+        alerter.alert(sb.toString());
+      }
+    });
+  }
+
+  private void searchCalls (String customer, Date begin, Date end){
+    phoneBillService.getPhoneBillFor(customer, new AsyncCallback<PhoneBill>() {
+      @Override
+      public void onFailure(Throwable ex) {
+        alertOnException(ex);
+      }
+
+      @Override
+      public void onSuccess(PhoneBill phoneBill) {
+        StringBuilder sb = new StringBuilder(phoneBill.callsByTimeRange(DateAndTime.dateToString(begin),
+                DateAndTime.dateToString(end)));
+        alerter.alert(sb.toString());
+      }
+    });
+  }
+
+
+  private void getPrettyPhoneBill(String customer) {
+    logger.info("Calling getPhoneBill");
+    phoneBillService.printBill(customer, new AsyncCallback<String>() {
+      @Override
+      public void onFailure(Throwable ex) {
+        alerter.alert("No call records exist for " + customer + ". If you would like" +
+                " to create a new phone bill choose add call and enter the call information.");
+      }
+      @Override
+      public void onSuccess(String s) {
+        alerter.alert(s);
+      }
+    });
 
   }
 
