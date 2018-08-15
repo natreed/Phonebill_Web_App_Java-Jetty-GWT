@@ -92,7 +92,7 @@ public class PhoneBill extends AbstractPhoneBill<PhoneCall> {
      */
     public String phoneBillHeader () {
         return ("Phonebill for: " + this.customer +
-                "\n\nfrom\t\t\t\tto\t\t\t\tstart\t\t\t\t\tfinish\t\t\t\t\tDuration\n" +
+                "\n\nfrom\t\t\tto\t\tstart\t\t\t\tfinish\t\t\t\tDuration\n" +
                 "-------------------------------------------------------------------------------------------------------------\n"
                 );
     }
