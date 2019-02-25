@@ -1,6 +1,6 @@
 # phonebill-gwt - Nathan Reed
 
-A restful web application built with GWT.
+A restful web application built with Jetty and GWT.
 
 This web application is designed to manage phonebills using a database for customers.
 
