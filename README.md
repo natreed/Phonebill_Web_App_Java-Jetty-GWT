@@ -2,7 +2,14 @@
 
 A restful web application built with GWT.
 
-This web application is designed to manage phonebills for a database of customers
+This web application is designed to manage phonebills using a database for customers.
+
+## Getting Started:
+- To run locally, Java version 10.0.1 is required as well as Maven 3.6
+- Open a Linux terminal and clone the repository. <git clone https://github.com/natreed/phonebill-gwt>
+- To start the server: mvn jetty:run-war
+- After the server starts, open http://localhost:8080 in you browser
+- Instructions for each of the features are listed in the 'Instructions' below. Please read before using features for the first time.
 
 ## Features include:
 
@@ -10,6 +17,8 @@ This web application is designed to manage phonebills for a database of customer
 - Adding a phonecall to an existing customers phonebil.
 - Retrieving and displaying a phonebill by customer name.
 - Displaying calls made by a customer with a time range
+
+## Instructions:
 
 ```
 To add a phone call select 'Add Phonecall' from the dropdown menu, fill in the required fields (name, 
