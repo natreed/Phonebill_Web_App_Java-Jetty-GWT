@@ -6,7 +6,7 @@ This web application is designed to manage phonebills using a database for custo
 
 ## Getting Started:
 - To run locally, Java version 10.0.1 is required as well as Maven 3.6
-- Open a Linux terminal and clone the repository. <git clone https://github.com/natreed/phonebill-gwt>
+- Open a Linux terminal and clone the repository. <git clone https://github.com/natreed/Phonebill_Web_App_Java-Jetty-GWT
 - To start the server: mvn jetty:run-war
 - After the server starts, open http://localhost:8080/phonebill in you browser
 - Instructions for each of the features are listed in the 'Instructions' below. Please read before using features for the first time.
